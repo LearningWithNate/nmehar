@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    background-color: rgba(228, 232, 232, 0.508);
+}
+.wrapper {
+    margin-top: 69px;
+}
+header {    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.971);;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    transition: background-color 0.5s ease-in-out;    
+}
+nav a:hover {
+    background-color: #f44336;
+    
+}
+.container {
+    max-width: 70vw;
+    margin: 0 auto;
+}
+
+/*Hero*/
+.hero-container {
+    background-color: rgba(0, 0, 0, 0.971);
+    clip-path: polygon(0 0, 100% 0, 100% 91%, 47% 100%, 0 91%);
+  }
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+    max-width: 70vw;
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+}
+#hero .tagline {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 5px;
+    text-align: center;
+}
+
+#hero .heading {
+    font-size: 1.5rem;
+}
+
+#hero button, header button {
+    background: #f44336;
+    border: 2px solid rgba(0, 0, 0, 0.971);    
+    padding: 5px 10px;
+    color: white;
+    width: fit-content;
+    align-self: center;
+    transition: all 0.5s ease-in-out;
+    font-size: 1rem;
+}
+#hero button:hover, header button:hover {
+    border: 2px solid #f44336;
+    background: white;
+    color: #f44336;
+    cursor: pointer;
+  }
+#hero img {
+    width: 200px;
+}
+/* Main */
+main {
+    margin: 1rem 0;
+    background-color: white;
+    height: 100vh;
+    border-radius: 5px;
+    padding: 20px;
+   
+}
+p {    
+    font-weight: 300;
+}
+h1 {
+    font-size: 24px;
+}
+h2 {
+    font-size: 20px;
+}
+.page-heading {
+    margin-top: 1.5rem;
+    text-align: center;
+    color: #6495ed;
+    font-weight: 400;
+}
+.content-text {
+    margin: 10px 0;
+    text-align: justify;
+    
+}
+
+/*Card*/
+.services {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.card {    
+    width: 300px;
+    padding: 10px;
+    height: 150px;
+    background-color: rgba(228, 232, 232, 0.508);;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+.card .header i{
+  color: #6495ed;    
+}
+.card .content {
+    text-align: justify;    
+}
+
+.card button {
+    padding: 5px;
+    border: 2px solid #6495ed;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card button:hover {
+    background-color: #6495ed;
+}
+/*Footer*/
+footer {
+    background-color:rgba(0, 0, 0, 0.971);    
+    color: #bbb;
+    line-height: 1.5;
+    clip-path: polygon(52% 0, 100% 10%, 100% 60%, 100% 100%, 0 100%, 0 61%, 0 10%);
+    }
+  footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  footer a {
+    text-decoration: none;
+    color: #eee;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  .ft-title {
+    color: #fff;    
+    font-size: 1rem;
+    padding-bottom: 0.625rem;
+  }
+
+  /* Footer main */
+  .ft-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }  
+  .ft-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem;
+  }
+  
+  /* Footer main | Newsletter form */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  input[type="email"] {
+    border: 0;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+    outline: none;
+  }
+  input[type="submit"] {
+    background-color: #f44336;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    padding: 0.625rem 0.9375rem;
+    margin-top: 0.3125rem;
+  }
+  /* Footer social */
+  .ft-social {
+    padding: 0 1.875rem 1.25rem;
+  }
+  .ft-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid;
+    padding-top: 1.25rem;
+  }
+  .ft-social-list li {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+  }
+  /* Footer legal */
+  .ft-legal {    
+    display: flex;
+    justify-content: space-around;
+  }
